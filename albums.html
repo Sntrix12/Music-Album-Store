@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Albums | SoundVault</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 800;
+            margin: 60px 0 20px 0;
+            color: #111827;
+        }
+        .page-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SoundVault</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html#music">Shop</a></li>
+                <li><a href="albums.html" style="color: #ff4757;">All Albums</a></li>
+                <li><a href="index.html#plans">Plans</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="cart-btn" onclick="toggleCart()">Cart</button>
+        </div>
+    </header>
+
+    <main class="main-wrapper" style="padding-top: 100px;">
+        <h1 class="page-title">The Complete Vault</h1>
+        <p class="page-subtitle">Discover our entire curated collection, from timeless classics to modern anthems.</p>
+
+        <section class="music-section" style="margin-top: 0;">
+            <div class="album-grid">
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8e/35/6c/8e356cc2-0be4-b83b-d29e-b578623df2ac/23UM1IM34052.rgb.jpg/600x600bb.jpg" alt="1989 (Taylor's Version)">
+                    <h3>1989 (Taylor's Version)</h3>
+                    <p class="desc">Pop &bull; Taylor Swift &bull; 2023<br><b>₹2500</b></p>
+                    <button onclick="addToCart('1989 (Taylor\'s Version)', 2500)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/b7/5d/fbb75d98-3b52-2fa5-ca82-658194f3c498/23UMGIM58157.rgb.jpg/600x600bb.jpg" alt="Midnights">
+                    <h3>Midnights</h3>
+                    <p class="desc">Synth-Pop &bull; Taylor Swift &bull; 2022<br><b>₹3000</b></p>
+                    <button onclick="addToCart('Midnights', 3000)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/1c/ca/a11ccab6-7d4c-e041-d028-998bcebeb709/24UMGIM61704.rgb.jpg/600x600bb.jpg" alt="Short n' Sweet">
+                    <h3>Short n' Sweet</h3>
+                    <p class="desc">Pop &bull; Sabrina Carpenter &bull; 2024<br><b>₹2800</b></p>
+                    <button onclick="addToCart('Short n\' Sweet', 2800)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/73/ae/bc/73aebca9-6c0c-4392-e083-71913b6b590d/23UMGIM16393.rgb.jpg/600x600bb.jpg" alt="Emails I Can't Send">
+                    <h3>Emails I Can't Send</h3>
+                    <p class="desc">Pop &bull; Sabrina Carpenter &bull; 2022<br><b>₹2200</b></p>
+                    <button onclick="addToCart('Emails I Can\'t Send', 2200)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9e/0d/17/9e0d17e0-c068-fbd9-fd85-610cc87c86aa/23UMGIM71511.rgb.jpg/600x600bb.jpg" alt="GUTS">
+                    <h3>GUTS</h3>
+                    <p class="desc">Pop-Punk &bull; Olivia Rodrigo &bull; 2023<br><b>₹3500</b></p>
+                    <button onclick="addToCart('GUTS', 3500)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg" alt="SOUR">
+                    <h3>SOUR</h3>
+                    <p class="desc">Pop &bull; Olivia Rodrigo &bull; 2021<br><b>₹2000</b></p>
+                    <button onclick="addToCart('SOUR', 2000)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg" alt="Lover">
+                    <h3>Lover</h3>
+                    <p class="desc">Synth-Pop &bull; Taylor Swift &bull; 2019<br><b>₹2600</b></p>
+                    <button onclick="addToCart('Lover', 2600)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/600x600bb.jpg" alt="÷ (Deluxe)">
+                    <h3>&divide; (Deluxe)</h3>
+                    <p class="desc">Acoustic Pop &bull; Ed Sheeran &bull; 2017<br><b>₹2100</b></p>
+                    <button onclick="addToCart('&divide; (Deluxe)', 2100)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a6/63/54/a6635418-7d49-b237-d1c9-ba85fa57dbc6/075679886613.jpg/600x600bb.jpg" alt="The Greatest Showman">
+                    <h3>The Greatest Showman</h3>
+                    <p class="desc">Soundtrack &bull; Various Artists &bull; 2017<br><b>₹1800</b></p>
+                    <button onclick="addToCart('The Greatest Showman', 1800)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/e6/06/ebe606da-e00f-82d3-47f3-b79904eed541/17UM1IM24651.rgb.jpg/600x600bb.jpg" alt="reputation">
+                    <h3>reputation</h3>
+                    <p class="desc">Electropop &bull; Taylor Swift &bull; 2017<br><b>₹2500</b></p>
+                    <button onclick="addToCart('reputation', 2500)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/6e/bf/a66ebf79-5008-8948-b352-a790fc87446b/19UM1IM04638.rgb.jpg/600x600bb.jpg" alt="Blinding Lights">
+                    <h3>Blinding Lights</h3>
+                    <p class="desc">Synth-Pop &bull; The Weeknd &bull; 2019<br><b>₹1500</b></p>
+                    <button onclick="addToCart('Blinding Lights', 1500)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/f5/87/95f587f7-21c3-d5f9-d81a-4350f9caa020/16UMGIM27643.rgb.jpg/600x600bb.jpg" alt="Views">
+                    <h3>Views</h3>
+                    <p class="desc">Hip-Hop/Rap &bull; Drake &bull; 2016<br><b>₹2400</b></p>
+                    <button onclick="addToCart('Views', 2400)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e9/c5/a8/e9c5a8a0-d698-137b-2e85-cf3a8d9548f8/190295303372.jpg/600x600bb.jpg" alt="Future Nostalgia">
+                    <h3>Future Nostalgia</h3>
+                    <p class="desc">Nu-Disco &bull; Dua Lipa &bull; 2020<br><b>₹2400</b></p>
+                    <button onclick="addToCart('Future Nostalgia', 2400)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg" alt="Fine Line">
+                    <h3>Fine Line</h3>
+                    <p class="desc">Pop-Rock &bull; Harry Styles &bull; 2019<br><b>₹2800</b></p>
+                    <button onclick="addToCart('Fine Line', 2800)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8d/25/8e/8d258e09-7395-998f-23ed-82b0433b0518/22UMGIM71396.rgb.jpg/600x600bb.jpg" alt="Stick Season">
+                    <h3>Stick Season</h3>
+                    <p class="desc">Folk-Pop &bull; Noah Kahan &bull; 2022<br><b>₹2200</b></p>
+                    <button onclick="addToCart('Stick Season', 2200)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/18/93/99/189399a7-95e1-324b-e40a-bd9e3ea22a95/20UM1IM14847.rgb.jpg/600x600bb.jpg" alt="evermore">
+                    <h3>evermore</h3>
+                    <p class="desc">Indie Folk &bull; Taylor Swift &bull; 2020<br><b>₹2500</b></p>
+                    <button onclick="addToCart('evermore', 2500)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2b/b9/fe/2bb9fef5-d7f3-8345-25a9-db0e79fde4e4/20UMGIM11048.rgb.jpg/600x600bb.jpg" alt="After Hours">
+                    <h3>After Hours</h3>
+                    <p class="desc">R&B/Soul &bull; The Weeknd &bull; 2020<br><b>₹3100</b></p>
+                    <button onclick="addToCart('After Hours', 3100)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/36/86/ec/3686ec99-dec4-0a01-8b74-2d8a9a0263a7/12UMGIM52988.rgb.jpg/600x600bb.jpg" alt="good kid, m.A.A.d city">
+                    <h3>good kid, m.A.A.d city</h3>
+                    <p class="desc">Hip-Hop &bull; Kendrick Lamar &bull; 2012<br><b>₹2000</b></p>
+                    <button onclick="addToCart('good kid, m.A.A.d city', 2000)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cc/0f/2d/cc0f2d02-5ff1-10e7-eea2-76863a55dbad/887828031795.png/600x600bb.jpg" alt="AM">
+                    <h3>AM</h3>
+                    <p class="desc">Indie Rock &bull; Arctic Monkeys &bull; 2013<br><b>₹1900</b></p>
+                    <button onclick="addToCart('AM', 1900)">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/10/66/591066ea-3c85-3dfe-ef82-ffdbbcdfc8b9/12UMGIM00033.rgb.jpg/600x600bb.jpg" alt="Born To Die">
+                    <h3>Born To Die</h3>
+                    <p class="desc">Alt-Pop &bull; Lana Del Rey &bull; 2012<br><b>₹2600</b></p>
+                    <button onclick="addToCart('Born To Die', 2600)">Buy</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="margin-top: 100px;">
+        <div class="footer-content">
+            <h3 style="color: white; margin-bottom: 15px; font-size: 20px;">SoundVault</h3>
+            <div class="footer-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            
+            <div id="cart-summary" style="margin-top: 20px; border-top: 1px solid #e5e7eb; padding-top: 15px;">
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <input type="text" id="discount-code" placeholder="Enter discount code" style="flex: 1; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">
+                    <button onclick="applyDiscount()" style="padding: 8px 15px; background: #111827; color: white; border: none; border-radius: 4px; cursor: pointer;">Apply</button>
+                </div>
+                <p id="discount-message" style="color: #10b981; font-size: 14px; margin-bottom: 10px; display: none;"></p>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px; color: #4b5563;">
+                    <span>Subtotal:</span>
+                    <span>₹<span id="cart-subtotal">0</span></span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px; color: #4b5563;">
+                    <span>Discount:</span>
+                    <span style="color: #10b981;">-₹<span id="cart-discount">0</span></span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #4b5563;">
+                    <span>Delivery (Free over ₹5000):</span>
+                    <span><span id="cart-delivery">₹200</span></span>
+                </div>
+                <h3 class="total" style="margin: 0 0 15px 0;">Total: ₹<span id="cart-total">0</span></h3>
+            </div>
+            
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content" style="max-width: 400px; text-align: center; padding: 40px 20px;">
+            <span class="close" onclick="closeConfirmation()">&times;</span>
+            <div style="font-size: 48px; color: #10b981; margin-bottom: 20px;">✓</div>
+            <h2 style="font-size: 24px; font-weight: 800; color: #111827; margin-bottom: 10px;">Order Confirmed!</h2>
+            <p style="color: #4b5563; font-size: 16px; margin-bottom: 20px;">Thank you for shopping at SoundVault.</p>
+            <div style="background-color: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="margin: 5px 0; color: #111827;"><strong>Order Number:</strong> <span id="confirm-order-id"></span></p>
+                <p style="margin: 5px 0; color: #111827;"><strong>Estimated Delivery:</strong> <span id="confirm-date"></span></p>
+            </div>
+            <button onclick="closeConfirmation()" style="padding: 10px 20px; background: #ff4757; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%;">Continue Browsing</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
